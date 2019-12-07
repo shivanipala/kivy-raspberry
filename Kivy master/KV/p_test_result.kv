@@ -1,0 +1,363 @@
+#: import Graph kivy_garden.graph
+<TestResultScreen>:
+
+    FloatLayout:
+
+        Label:
+            markup: True
+            text: "[color=#0000ff][font=OpenSans]Test Results[/color][/font]"
+            size_hint: (None,None)
+            size: (50,10)
+            pos: (385,405)
+            font_size: '23px'
+
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]Generate Report[/b][/color]"
+	        size_hint: (None,None)
+	        height: 38
+            width: 130
+            pos: (40,20)
+            on_press: root.mail_popup()
+        Button:
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]Proceed For Diagnosis[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 180
+            pos: (600,20)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]   Pre\nResults[/b][/color]"
+	        size_hint: (None,None)
+	        height: 50
+            width: 70
+            pos: (40,290)
+            on_press: sm2.current= 'Pre_Result'
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]  Post\nResults[/b][/color]"
+	        size_hint: (None,None)
+	        height: 50
+            width: 70
+            pos: (40,230)
+            on_press: sm2.current= 'Post_Result'
+
+
+
+    ScreenManager:
+        id: sm2
+        Pre_Result:
+        Post_Result:
+
+<Pre_Result>:
+    name: 'Pre_Result'
+    FloatLayout:
+        size_hint: (None,None)
+        size: (620,230)
+        pos: (140,125)
+        canvas:
+            Color:
+                rgba: 1,1,1,1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Label:
+            markup: True
+            text: "[color=#0000c8] FEV1[/color]"
+            size_hint:(None,None)
+            pos: (140,230)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FVC[/color]"
+            size_hint:(None,None)
+            pos: (140,200)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEV1/FVC[/color]"
+            size_hint:(None,None)
+            pos: (140,170)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FET[/color]"
+            size_hint:(None,None)
+            pos: (140,140)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]PVF[/color]"
+            size_hint:(None,None)
+            pos: (140,110)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEF25[/color]"
+            size_hint:(None,None)
+            pos: (140,80)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEF 50-75[/color]"
+            size_hint:(None,None)
+            pos: (140,50)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            id:tr_pre_fev1
+            color: (0,0,0)
+            text: root.print_fev1()
+            size_hint:(None,None)
+            pos: (240,230)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            id:tr_pre_fvc
+            color: (0,0,0)
+            text: root.print_fvc()
+            size_hint:(None,None)
+            pos: (240,200)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            id:tr_pre_fev1_fvc
+            color: (0,0,0)
+            text: root.print_fev1_fvc()
+            size_hint:(None,None)
+            pos: (240,170)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            id:tr_pre_fet
+            color: (0,0,0)
+            text: root.print_fet()
+            size_hint:(None,None)
+            pos: (240,140)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            id:tr_pre_pvf
+            color: (0,0,0)
+            text: root.print_pvf()
+            size_hint:(None,None)
+            pos: (240,110)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            id:tr_pre_fef25
+            color: (0,0,0)
+            text: root.print_fef25()
+            size_hint:(None,None)
+            pos: (240,80)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            id:tr_pre_fef_50_75
+            color: (0,0,0)
+            text: root.print_fef50_75()
+            size_hint:(None,None)
+            pos: (240,50)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            text: "[color=#0000c8] Test\nValue[/color]"
+            size_hint:(None,None)
+            pos: (240,270)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]Normal\n Range[/color]"
+            size_hint:(None,None)
+            pos: (320,270)
+            bold:True
+            font_size: '20px'
+        Graph:
+            size_hint: (None,None)
+            size: (150,140)
+            background_color: 0,0,0,1
+            pos: (420,200)
+        Graph:
+            size_hint: (None,None)
+            size: (150,140)
+            background_color: 0,0,0,1
+            pos: (420,50)
+        Graph:
+            size_hint: (None,None)
+            size: (160,190)
+            background_color: 0,0,0,1
+            pos: (600,125)
+
+<Post_Result>:
+    name: 'Post_Result'
+    FloatLayout:
+        size_hint: (None,None)
+        size: (620,230)
+        pos: (140,125)
+        canvas:
+            Color:
+                rgba: 1,1,1,1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        Label:
+            markup: True
+            text: "[color=#0000c8] FEV1[/color]"
+            size_hint:(None,None)
+            pos: (140,230)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FVC[/color]"
+            size_hint:(None,None)
+            pos: (140,200)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEV1/FVC[/color]"
+            size_hint:(None,None)
+            pos: (140,170)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FET[/color]"
+            size_hint:(None,None)
+            pos: (140,140)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]PVF[/color]"
+            size_hint:(None,None)
+            pos: (140,110)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEF25[/color]"
+            size_hint:(None,None)
+            pos: (140,80)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEF 50-75[/color]"
+            size_hint:(None,None)
+            pos: (140,50)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8] Test\nValue[/color]"
+            size_hint:(None,None)
+            pos: (240,270)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]Normal\n Range[/color]"
+            size_hint:(None,None)
+            pos: (320,270)
+            bold:True
+            font_size: '20px'
+        Label:
+            markup: True
+            color: (0,0,0)
+            text: root.print_fev1()
+            id:tr_post_fev1
+            size_hint:(None,None)
+            pos: (240,230)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            color: (0,0,0)
+            id:tr_post_fvc
+            text: root.print_fvc()
+            size_hint:(None,None)
+            pos: (240,200)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            color: (0,0,0)
+            id:tr_post_fev1_fvc
+            text: root.print_fev1_fvc()
+            size_hint:(None,None)
+            pos: (240,170)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            color: (0,0,0)
+            id:tr_post_fet
+            text: root.print_fet()
+            size_hint:(None,None)
+            pos: (240,140)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            color: (0,0,0)
+            id:tr_post_pvf
+            text: root.print_pvf()
+            size_hint:(None,None)
+            pos: (240,110)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            color: (0,0,0)
+            id:tr_post_fef25
+            text: root.print_fef25()
+            size_hint:(None,None)
+            pos: (240,80)
+            bold:True
+            font_size: '15px'
+        Label:
+            markup: True
+            color: (0,0,0)
+            id:tr_post_fef_50_75
+            text: root.print_fef50_75()
+            size_hint:(None,None)
+            pos: (240,50)
+            bold:True
+            font_size: '15px'
+        Graph:
+            size_hint: (None,None)
+            size: (150,140)
+            background_color: 0,0,0,1
+            pos: (420,200)
+        Graph:
+            size_hint: (None,None)
+            size: (150,140)
+            background_color: 0,0,0,1
+            pos: (420,50)
+        Graph:
+            size_hint: (None,None)
+            size: (160,190)
+            background_color: 0,0,0,1
+            pos: (600,125)

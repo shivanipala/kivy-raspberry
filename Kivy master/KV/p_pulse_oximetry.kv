@@ -1,0 +1,147 @@
+<PulseOximetryScreen>:
+    FloatLayout:
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]START[/b][/color]"
+            size_hint: (None,None)
+            height: 38
+            width: 80
+            pos: (40,320)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]STOP[/b][/color]"
+            size_hint: (None,None)
+            height: 38
+            width: 80
+            pos: (40,265)
+        Graph:
+            size_hint: (None,None)
+            size: (625,170)
+            background_color: 0,0,0,1
+            pos: (140,238)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]Report[/b][/color]"
+            size_hint: (None,None)
+            height: 38
+            width: 80
+            pos: (690,195)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]Print[/b][/color]"
+            size_hint: (None,None)
+            height: 38
+            width: 80
+            pos: (690,150)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]History[/b][/color]"
+            size_hint: (None,None)
+            height: 38
+            width: 80
+            pos: (690,105)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]TEST[/b][/color]"
+            size_hint: (None,None)
+            height: 38
+            width: 80
+            pos: (690,60)
+        Widget:
+            size_hint: (None,None)
+            size: (300,170)
+            pos: (40,60)
+            canvas.before:
+                Color:
+                    rgba: .5, 0.5,0.5 , .8
+                Line:
+                    width: 2
+                    rectangle: self.x, self.y, self.width, self.height
+            canvas:
+                Color:
+                    rgba: 0,0,0,0.8
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+        Widget:
+            size_hint: (None,None)
+            size: (300,170)
+            pos: (375,60)
+            canvas.before:
+                Color:
+                    rgba: .5, 0.5,0.5 , .8
+                Line:
+                    width: 2
+                    rectangle: self.x, self.y, self.width, self.height
+            canvas:
+                Color:
+                    rgba: 0.5,0.3,0.4,0.8
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+        Label:
+            markup: True
+            text: "[color=#ffffff][font=OpenSans]PR (bpm)[/color][/font]"
+            size_hint: (None,None)
+            pos: (50,160)
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#ffffff][font=OpenSans]120\n50[/color][/font]"
+            size_hint: (None,None)
+            pos: (120,147)
+            font_size: '18px'
+        Label:
+            markup: True
+            id: p_pr
+            text: "[color=#ffffff][font=OpenSans]75[/color][/font]"
+            size_hint: (None,None)
+            pos: (120,75)
+            font_size: '120px'
+        Label:
+            markup: True
+            text: "[color=#ffffff][font=OpenSans]SPO2(%)[/color][/font]"
+            size_hint: (None,None)
+            pos: (575,160)
+            font_size: '20px'
+        Label:
+            markup: True
+            text: "[color=#ffffff][font=OpenSans]100\n80[/color][/font]"
+            size_hint: (None,None)
+            pos: (500,147)
+            font_size: '18px'
+        Label:
+            markup: True
+            id: p_pr
+            text: "[color=#ffffff][font=OpenSans]98[/color][/font]"
+            size_hint: (None,None)
+            pos: (470,75)
+            font_size: '120px'
+        Widget:
+            size_hint: (None,None)
+            size: (80,80)
+            pos: (380,145)
+            canvas:
+                Color:
+                    rgba: 1,1,1,1
+                Rectangle:
+                    source: 'Resources/percent1.png'
+                    size: self.size
+                    pos: self.pos
+        Widget:
+            size_hint: (None,None)
+            size: (90,90)
+            pos: (225,140)
+            canvas:
+                Color:
+                    rgba: 1,1,1,1
+                Rectangle:
+                    source: 'Resources/heart.png'
+                    size: self.size
+                    pos: self.pos

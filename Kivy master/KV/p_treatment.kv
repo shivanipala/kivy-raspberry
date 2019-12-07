@@ -1,0 +1,107 @@
+<TreatmentScreen>:
+    FloatLayout:
+        Label:
+            markup: True
+            text: "[color=#0000ff][font=OpenSans]Treatment[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (385,385)
+            font_size: '23px'
+
+        Label:
+            text: "[color=#0000ff][b]Lifestyle Changes[/b][/color]"
+            size_hint: (None, None)
+            pos: (110,305)
+            font_size: 20
+            markup: True
+        Button:
+            color: [0,0,0,1]
+            size_hint: (None,None)
+            background_color: [1,1,1,0]
+            size: (150,130)
+            pos: (75,205)
+            canvas:
+                Rectangle:
+                    source: "Resources/avoid_smoking.png"
+                    size: self.size
+                    pos: self.pos
+        Label:
+            text: "[color=#0000ff][b]Medications and\n                Inhalers[/b][/color]"
+            size_hint: (None, None)
+            pos: (385,295)
+            font_size: 20
+            markup: True
+        Button:
+            id: drugs
+            color: [0,0,0,1]
+            size_hint: (None,None)
+            background_color: [1,1,1,0]
+            size: (120,120)
+            pos: (325,210)
+            on_press: root.binds()
+            canvas:
+                Rectangle:
+                    source: "Resources/medications.png"
+                    size: self.size
+                    pos: self.pos
+                Rectangle:
+                    source: "Resources/inhaler.png"
+                    size: (130,100)
+                    pos: (410,190)
+        Label:
+            text: "[color=#0000ff][b]Vaccination[/b][/color]"
+            size_hint: (None, None)
+            pos: (600,305)
+            font_size: 20
+            markup: True
+        Button:
+            id: vaccine
+            color: [0,0,0,1]
+            size_hint: (None,None)
+            background_color: [1,1,1,0]
+            size: (150,130)
+            pos: (585,205)
+            on_press: root.binds()
+            canvas:
+                Rectangle:
+                    source: "Resources/vaccine.png"
+                    size: self.size
+                    pos: self.pos
+        Label:
+            text: "[color=#0000ff][b]Pulmonary Rehabilitation[/b][/color]"
+            size_hint: (None, None)
+            pos: (175,115)
+            font_size: 20
+            markup: True
+        Button:
+            color: [0,0,0,1]
+            size_hint: (None,None)
+            background_color: [1,1,1,0]
+            size: (190,175)
+            pos: (250,15)
+            canvas:
+                Rectangle:
+                    source: "Resources/breathing.png"
+                    size: self.size
+                    pos: self.pos
+                Rectangle:
+                    source: "Resources/fruits1.png"
+                    size: (200,150)
+                    pos: (130,15)
+        Label:
+            text: "[color=#0000ff][b]Oxygen Therapy[/b][/color]"
+            size_hint: (None, None)
+            pos: (540,115)
+            font_size: 20
+            markup: True
+        Button:
+            color: [0,0,0,1]
+            size_hint: (None,None)
+            background_color: [1,1,1,0]
+            size: (150,130)
+            pos: (520,25)
+            canvas:
+                Rectangle:
+                    source: "Resources/oxygen_therapy.png"
+                    size: self.size
+                    pos: self.pos

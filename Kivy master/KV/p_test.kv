@@ -1,0 +1,43 @@
+<TestScreen>:
+
+    FloatLayout:
+        Label:
+            markup: True
+            text: "[color=#0000ff][font=OpenSans]Test[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (385,385)
+            font_size: '23px'
+
+        Button:
+            id: FVC
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]FVC[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 130
+            pos: (180,190)
+            on_release: root.binds()
+        Button:
+            id: SVC
+            on_press: root.binds()
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]SVC[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 130
+            pos: (330,190)
+
+        Button:
+            id: pulse_oximetry
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]Pulse Oximetry[/b][/color]"
+		    on_press: root.binds()
+		    size_hint: (None,None)
+		    height: 38
+            width: 130
+            pos: (480,190)
+

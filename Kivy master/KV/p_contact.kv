@@ -1,0 +1,71 @@
+<ContactScreen>:
+
+    FloatLayout:
+        Label:
+            markup: True
+            text: "[color=#0000ff][font=OpenSans]Contact[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (385,385)
+            font_size: '23px'
+
+        Label:
+            text: "[color=#000000][b]Contact Us[/b][/color]"
+            font_size: 30
+            size_hint: (None, None)
+            markup: True
+            pos: (340,260)
+        Label:
+            text: "[color=#000000]Address:[/color]"
+            font_size: 25
+            size_hint: (None, None)
+            markup: True
+            pos: (174,180)
+        Label:
+            id: address_lbl
+            text: "[color=#000000][/color]"
+            font_size: 25
+            size_hint: (None, None)
+            markup: True
+            pos: (250,180)
+
+        Label:
+            text: "[color=#000000]Email Id:[/color]"
+            font_size: 25
+            size_hint: (None, None)
+            markup: True
+            pos: (170,130)
+        Label:
+            id: email_lbl
+            text: "[color=#000000][/color]"
+            font_size: 25
+            size_hint: (None, None)
+            markup: True
+            pos: (250,130)
+
+        Label:
+            text: "[color=#000000]Phone No:[/color]"
+            font_size: 25
+            size_hint: (None, None)
+            markup: True
+            pos: (180,80)
+
+        Label:
+            id: phone_lbl
+            text: "[color=#000000][/color]"
+            font_size: 25
+            size_hint: (None, None)
+            markup: True
+            pos: (250,80)
+
+        Button:
+            id: home
+            on_press: root.binds()
+            background_color: [0,0,200,.8]
+		    markup: True
+		    text: "[color=#ffffff][b] HOME [/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 150
+            pos: (300,50)
+

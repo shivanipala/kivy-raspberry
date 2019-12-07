@@ -1,0 +1,11 @@
+#:import Label kivy.uix.label.Label
+
+<DrugsName>:
+    GridLayout:
+        cols: 1
+        spacing: 50
+        size_hint_y: None
+        pos: (0,250)
+        on_parent:
+            for i in root.list :self.add_widget(Label(text = str(i), pos=self.pos, color=(1,0,0,1)))
+

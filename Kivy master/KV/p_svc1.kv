@@ -1,0 +1,53 @@
+<Svc1Screen>:
+
+    FloatLayout:
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]START[/b][/color]"
+            size_hint: (None,None)
+            height: 45
+            width: 100
+            pos: (250,50)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]STOP[/b][/color]"
+            size_hint: (None,None)
+            height: 45
+            width: 100
+            pos: (370,50)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]SUBMIT[/b][/color]"
+            size_hint: (None,None)
+            height: 45
+            width: 100
+            pos: (490,50)
+        Button:
+            id: info
+            background_color: [1,1,1,0]
+            size_hint: (None,None)
+            height: 30
+            width: 30
+            pos: (750,200)
+            on_press: root.binds()
+            canvas:
+                Rectangle:
+                    source:"Resources/info.jpg"
+                    size: self.size
+                    pos: self.pos
+        Label:
+            markup: True
+            text: "[color=#000000][font=OpenSans]info[/color][/font]"
+            size_hint: (None,None)
+            italics: True
+            pos: (717,143)
+            font_size: '15px'
+        Graph:
+            size_hint: (None,None)
+            size: (650,230)
+            background_color: 0,0,0,1
+            pos: (70,120)
+

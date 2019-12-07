@@ -1,0 +1,99 @@
+<HomeScreen>:
+
+    FloatLayout:
+        Label:
+            markup: True
+            text: "[color=#0000ff][font=OpenSans]Home[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (385,385)
+            font_size: '23px'
+
+        Label:
+            markup: True
+            text: "[color=#0000ff][font=OpenSans]Home[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (385,385)
+            font_size: '23px'
+
+        Button:
+            id: medical_questionnare
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]MEDICAL QUESTIONNARIE[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 200
+            pos: (290,250)
+            on_release: root.binds()
+        Button:
+            id: history
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]HISTORY[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 100
+            pos: (180,200)
+        Button:
+            id: test
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]TEST[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 100
+            pos: (285,200)
+            on_release: root.binds()
+        Button:
+            id: diagnosis
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]DIAGNOSIS[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 100
+            pos: (390,200)
+            on_release: root.binds()
+
+        Button:
+            id: treatment
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]TREATMENT[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 100
+            pos: (495,200)
+            on_release: root.binds()
+        Button:
+            id: tutorial
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]TUTORIAL[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 100
+            pos: (285,140)
+        Button:
+            id: manual
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]MANUAL[/b][/color]"
+		    size_hint: (None,None)
+		    height: 38
+            width: 100
+            pos: (390,140)
+            on_release: root.binds()
+        Button:
+            id: life_with_copd
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b] LIFE WITH COPD [/b][/color]"
+		    on_press: root.binds
+		    size_hint: (None,None)
+		    height: 38
+            width: 195
+            pos: (295,80)
+

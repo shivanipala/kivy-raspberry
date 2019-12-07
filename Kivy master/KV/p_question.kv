@@ -1,0 +1,123 @@
+<QuestionScreen>:
+    FloatLayout:
+        Label:
+            text: '[color=#0000ff][b]MEDICAL QUESTIONNAIRE[/b][/color]'
+            font_size: 20
+            pos: (380,355)
+            markup: True
+            size_hint: (None,None)
+
+        Label:
+            text: "[color=#0000ff][b]Symptoms:\nKindly select all the symptoms patient has.[/b][/color]"
+            size_hint: (None, None)
+            pos: (150,280)
+            font_size: 16
+            markup: True
+
+        CheckBox:
+            id: cb_dyspnea
+
+            size_hint: (None,None)
+            pos: (10,230)
+            color: [0,0,0,1]
+
+        Label:
+            size_hint: (None, None)
+            text: "[color=#000000]Progressive Dyspnea (worsens over time and exercise)[/color]"
+            font_size: 15
+            markup: True
+            pos: (220,230)
+
+
+        CheckBox:
+            id: cb_cough
+            pos: (10,190)
+            color: [0,0,0,1]
+            size_hint: (None,None)
+        Label:
+            size_hint: (None, None)
+            text: "[color=#000000]Chronic Cough[/color]"
+            font_size: 15
+            markup: True
+            pos: (85,190)
+
+        CheckBox:
+            id: cb_sputum
+            pos: (10,150)
+            color: [0,0,0,1]
+            size_hint: (None,None)
+        Label:
+            size_hint: (None, None)
+            text: "[color=#000000]Sputum Production[/color]"
+            font_size: 15
+            markup: True
+            pos: (100,150)
+
+        CheckBox:
+            id: cb_wheezing
+            pos: (10,110)
+            color: [0,0,0,1]
+            size_hint: (None,None)
+        Label:
+            size_hint: (None, None)
+            text: "[color=#000000]Wheezing [/color]"
+            font_size: 15
+            markup: True
+            pos: (70,110)
+
+        Label:
+            text: "[color=#0000ff][b]All the symptoms mentioned above are slowly progressive. Please answer in yes/no.[/b][/color]"
+            size_hint: (None, None)
+            pos: (300,60)
+            font_size: 16
+            markup: True
+
+        CheckBox:
+            id: cb_yes
+            group: 'A'
+            pos: (10,30)
+            color: [0,0,0,1]
+            size_hint: (None,None)
+
+        CheckBox:
+            id: cb_no
+            disabled: False
+            group: 'A'
+            pos: (10,-5)
+            color: [0,0,0,1]
+            size_hint: (None,None)
+
+        Label:
+            text: "[color=#000000]Yes[/color]"
+            markup: True
+            size_hint: (None,None)
+            pos: (49,30)
+            font_size: 15
+
+        Label:
+            text: "[color=#000000]No[/color]"
+            markup: True
+            size_hint: (None,None)
+            pos: (49,-5)
+            font_size: 15
+
+        Button:
+            id: next
+            text: "[color=#ffffff][b]NEXT[/b][/color]"
+            pos: (580,0)
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    size_hint: (None,None)
+		    height: 38
+            width: self.width
+            on_release: root.binds()
+
+
+        Label:
+            text: "[color=#0000ff][u][ref=some]Edit[/ref][/u][/color]"
+            markup: True
+            size_hint: (None, None)
+            font_size: 16
+            on_ref_press: root.edit()
+            pos: (700,290)
+

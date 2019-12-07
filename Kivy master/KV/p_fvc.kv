@@ -1,0 +1,46 @@
+<FVCScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        FloatLayout:
+            Label:
+                markup: True
+                text: "[color=#0000ff][font=OpenSans]FVC[/color][/font]"
+                size_hint: (None,None)
+                size: (50,50)
+                pos: (385,385)
+                font_size: '23px'
+
+            Button:
+                id: pre_broncholidator_test
+                bold: True
+                color: [0,0,0,1]
+                text: "Pre- Bronchodilator Test"
+                size_hint: (None,None)
+                background_color: [1,1,1,0]
+                size: (200,100)
+                pos: (310,230)
+                on_release: root.binds()
+                canvas.before:
+                    Color:
+                        rgba: .5, 0.5,0.5 , .8
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                id: post_broncholidator_test
+                bold: True
+                color: [0,0,0,1]
+                text: "Post- Bronchodilator Test"
+                size_hint: (None,None)
+                size: (200,100)
+                pos: (310,80)
+                background_color: [1,1,1,0]
+                on_release: root.binds()
+                canvas.before:
+                    Color:
+                        rgba: .5, 0.5,0.5 , .8
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+

@@ -1,0 +1,465 @@
+<PreTestScreen>:
+    FloatLayout:
+
+        Label:
+            markup: True
+            text: "[color=#0000ff][font=OpenSans]FVC: Pre-Broncho Test[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (385,385)
+            font_size: '23px'
+
+
+
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]START[/b][/color]"
+            size_hint: (None,None)
+            height: 38
+            width: 80
+            pos: (40,250)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]   SHOW\n VOLUME\n  GRAPH[/b][/color]"
+            size_hint: (None,None)
+            height: 80
+            width: 85
+            pos: (370,230)
+        Button:
+            background_color: [0,0,200,0.8]
+            markup: True
+            text: "[color=#ffffff][b]SUBMIT[/b][/color]"
+            size_hint: (None,None)
+            height: 38
+            width: 80
+            pos: (680,250)
+            id: pre_submit
+            on_press: root.pre_change_screen()
+    FloatLayout:
+        Label:
+            markup: True
+            text: "[color=#0000c8]Trial-1[/color]"
+            pos: (-170,-70)
+            bold:True
+            font_size: '18px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]Trial-2[/color]"
+            pos: (-80,-70)
+            bold:True
+            font_size: '18px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]Trial-3[/color]"
+            pos: (10,-70)
+            bold:True
+            font_size: '18px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]Trial-4[/color]"
+            pos: (100,-70)
+            bold:True
+            font_size: '18px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]Trial-5[/color]"
+            pos: (190,-70)
+            bold:True
+            font_size: '18px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]Trial-6[/color]"
+            pos: (280,-70)
+            bold:True
+            font_size: '18px'
+
+    StackLayout:
+        orientation: 'tb-lr'
+        pos: (180,90)
+        size_hint:(None,None)
+        padding:[-5,0]
+        spacing: [-20,-20]
+        Label:
+            markup: True
+            text: "[color=#000000]0000[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_t1
+        Label:
+            markup: True
+            text: "[color=#000000]0000[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_t2
+        Label:
+            markup: True
+            text: "[color=#000000]0000[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_t3
+        Label:
+            markup: True
+            text: "[color=#000000]0000[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_t4
+        Label:
+            markup: True
+            text: "[color=#000000]0000[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_t5
+        Label:
+            markup: True
+            text: "[color=#000000]0000[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_t6
+
+    StackLayout:
+        orientation: 'tb-lr'
+        pos: (180,70)
+        size_hint:(None,None)
+        padding:[-5,0]
+        spacing: [-20,-20]
+        Label:
+            markup: True
+            text: "[color=#000000]1111[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fvc_t1
+        Label:
+            markup: True
+            text: "[color=#000000]1111[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fvc_t2
+        Label:
+            markup: True
+            text: "[color=#000000]1111[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fvc_t3
+        Label:
+            markup: True
+            text: "[color=#000000]1111[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fvc_t4
+        Label:
+            markup: True
+            text: "[color=#000000]1111[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fvc_t5
+        Label:
+            markup: True
+            text: "[color=#000000]1111[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fvc_t6
+    StackLayout:
+        orientation: 'tb-lr'
+        pos: (180,50)
+        size_hint:(None,None)
+        padding:[-5,0]
+        spacing: [-20,-20]
+        Label:
+            markup: True
+            text: "[color=#000000]2222[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_fvc_t1
+        Label:
+            markup: True
+            text: "[color=#000000]2222[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_fvc_t2
+        Label:
+            markup: True
+            text: "[color=#000000]2222[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_fvc_t3
+        Label:
+            markup: True
+            text: "[color=#000000]2222[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_fvc_t4
+        Label:
+            markup: True
+            text: "[color=#000000]2222[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_fvc_t5
+        Label:
+            markup: True
+            text: "[color=#000000]2222[/color]"
+            bold:True
+            font_size: '15px'
+            id: p_pr_fev1_fvc_t6
+    StackLayout:
+        orientation: 'tb-lr'
+        pos: (180,30)
+        size_hint:(None,None)
+        padding:[-5,0]
+        spacing: [-20,-20]
+        Label:
+            markup: True
+            text: "[color=#000000]3333[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fet_t1
+        Label:
+            markup: True
+            text: "[color=#000000]3333[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fet_t2
+        Label:
+            markup: True
+            text: "[color=#000000]3333[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fet_t3
+        Label:
+            markup: True
+            text: "[color=#000000]3333[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fet_t4
+        Label:
+            markup: True
+            text: "[color=#000000]3333[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fet_t5
+        Label:
+            markup: True
+            text: "[color=#000000]3333[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fet_t6
+
+    StackLayout:
+        orientation: 'tb-lr'
+        pos: (180,10)
+        size_hint:(None,None)
+        padding:[-5,0]
+        spacing: [-20,-20]
+        Label:
+            markup: True
+            text: "[color=#000000]5555[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_pvf_t1
+        Label:
+            markup: True
+            text: "[color=#000000]5555[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_pvf_t2
+        Label:
+            markup: True
+            text: "[color=#000000]5555[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_pvf_t3
+        Label:
+            markup: True
+            text: "[color=#000000]5555[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_pvf_t4
+        Label:
+            markup: True
+            text: "[color=#000000]5555[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_pvf_t5
+        Label:
+            markup: True
+            text: "[color=#000000]5555[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_pvf_t6
+    StackLayout:
+        orientation: 'tb-lr'
+        pos: (180,-10)
+        size_hint:(None,None)
+        padding:[-5,0]
+        spacing: [-20,-20]
+        Label:
+            markup: True
+            text: "[color=#000000]6666[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef25_t1
+        Label:
+            markup: True
+            text: "[color=#000000]6666[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef25_t2
+        Label:
+            markup: True
+            text: "[color=#000000]6666[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef25_t3
+        Label:
+            markup: True
+            text: "[color=#000000]6666[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef25_t4
+        Label:
+            markup: True
+            text: "[color=#000000]6666[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef25_t5
+        Label:
+            markup: True
+            text: "[color=#000000]6666[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef25_t6
+    StackLayout:
+        orientation: 'tb-lr'
+        pos: (180,-30)
+        size_hint:(None,None)
+        padding:[-5,0]
+        spacing: [-20,-20]
+        Label:
+            markup: True
+            text: "[color=#000000]7777[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef50_75_t1
+        Label:
+            markup: True
+            text: "[color=#000000]7777[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef50_75_t2
+        Label:
+            markup: True
+            text: "[color=#000000]7777[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef50_75_t3
+        Label:
+            markup: True
+            text: "[color=#000000]7777[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef50_75_t4
+        Label:
+            markup: True
+            text: "[color=#000000]7777[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef50_75_t5
+        Label:
+            markup: True
+            text: "[color=#000000]7777[/color]"
+            bold:True
+            font_size: '15px'
+            id:p_pr_fef50_75_t6
+
+    FloatLayout:
+        Label:
+            markup: True
+            text: "[color=#0000c8] FEV1[/color]"
+            size_hint:(None,None)
+            pos: (0,90)
+            bold:True
+            font_size: '16px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FVC[/color]"
+            size_hint:(None,None)
+            pos: (0,70)
+            bold:True
+            font_size: '16px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEV1/FVC[/color]"
+            size_hint:(None,None)
+            pos: (0,50)
+            bold:True
+            font_size: '16px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FET[/color]"
+            size_hint:(None,None)
+            pos: (0,30)
+            bold:True
+            font_size: '16px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]PEF[/color]"
+            size_hint:(None,None)
+            pos: (0,10)
+            bold:True
+            font_size: '16px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEF25[/color]"
+            size_hint:(None,None)
+            pos: (0,-10)
+            bold:True
+            font_size: '16px'
+        Label:
+            markup: True
+            text: "[color=#0000c8]FEF 50-75[/color]"
+            size_hint:(None,None)
+            pos: (0,-30)
+            bold:True
+            font_size: '16px'
+        #Start Graph(Left Side)
+        Graph:
+            id: pre_svg
+            size_hint: (None,None)
+            size: (150,140)
+            background_color: 0,0,0,1
+            pos: (500,210)
+            xlabel: "Time(s)"
+            ylabel: "Volume(L)"
+            padding: 5
+            #x_ticks_minor:1
+            x_tics_major: 1
+            y_ticks_major: 2
+            x_grid:True
+            y_grid:True
+            y_grid_label:True
+            x_grid_label:True
+            xmin:-0
+            xmax:7
+            ymin:0
+            ymax:7
+        #Volume Graph(Right Side)
+        Graph:
+            id: pre_start
+            size_hint: (None,None)
+            size: (150,140)
+            background_color: 0,0,0,1
+            pos: (180,210)
+            xlabel: "Time(s)"
+            ylabel: "Flow(L)"
+            x_grid:True
+            y_grid:True
+            y_grid_label:True
+            x_grid_label:True
+            x_ticks_minor:1
+            x_tics_major:10
+            y_ticks_major:3
+            xmin:-0
+            xmax: 65
+            ymin:0
+            ymax:14

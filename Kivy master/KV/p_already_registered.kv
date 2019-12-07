@@ -1,0 +1,129 @@
+<AlreadyRegisteredScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        FloatLayout:
+            Label:
+                markup: True
+                text: "[color=#0000ff][font=OpenSans]Already Registered[/color][/font]"
+                size_hint: (None,None)
+                size: (50,50)
+                pos: (385,385)
+                font_size: '23px'
+
+            Label:
+                text: "Patient ID"
+                pos : (-307,90)
+                bold: True
+                color: [0,0,0,1]
+            Label:
+                text: "First Name"
+                pos : (-30,90)
+                bold: True
+                color: [0,0,0,1]
+            Label:
+                text: "Last Name"
+                pos : (236,90)
+                bold: True
+                color: [0,0,0,1]
+
+            TextInput:
+                id: pa_id
+                hint_text: "Enter Patient ID"
+                multiline: False
+                size_hint: (None,None)
+                height: 30
+                width: 170
+                pos : (60,270)
+                use_bubble: True
+            TextInput:
+                id: pa_fname
+                hint_text: "Enter First Name"
+                multiline: False
+                size_hint: (None,None)
+                height: 30
+                width: 170
+                pos : (333,270)
+                use_bubble: True
+            TextInput:
+                id: pa_lname
+                hint_text: "Enter Last Name"
+                multiline: False
+                size_hint: (None,None)
+                height: 30
+                width: 170
+                pos : (600,270)
+                use_bubble: True
+            Button:
+                id: search_btn
+                background_color: [0,0,200,0.8]
+                markup: True
+                text: "[color=#ffffff][b]Search[/b][/color]"
+                on_press: root.prints
+                size_hint: (None,None)
+                height: 38
+                width: 100
+                pos: (360,210)
+
+
+
+            GridLayout:
+                cols: 3
+                rows:4
+                row_force_default: True
+                row_default_height: 30
+
+                pos: (0,-290)
+                canvas.before:
+                    Color:
+                        rgba: .5, 0.5,0.5 , .8
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+                canvas:
+                    Color:
+                        rgba: 0,0,0.5,.2
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                Label:
+                    markup: True
+                    text: "[color=#000000]ID[/color]"
+                Label:
+                    markup: True
+                    text: "[color=#000000]Name[/color]"
+                Label:
+                    markup: True
+                    text: "[color=#000000]Gender[/color]"
+                Label:
+                    id:p1_id
+                    markup:True
+                    text:"[color=#000000][/color]"
+                Button:
+                    id:p1_name
+                    background_color: [0,0,0,0]
+                Label:
+                    id:p1_gender
+                    markup:True
+                    text:"[color=#000000][/color]"
+                Label:
+                    id:p2_id
+                    markup:True
+                    text:"[color=#000000][/color]"
+                Button:
+                    id:p2_name
+                    background_color: [0,0,0,0]
+                Label:
+                    id:p2_gender
+                    markup:True
+                    text:"[color=#000000][/color]"
+                Label:
+                    id:p3_id
+                    markup:True
+                    text:"[color=#000000][/color]"
+                Button:
+                    id:p3_name
+                    background_color: [0,0,0,0]
+                Label:
+                    id:p3_gender
+                    markup:True
+                    text:"[color=#000000][/color]"

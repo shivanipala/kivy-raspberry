@@ -1,0 +1,74 @@
+<LifeWithCopdScreen>:
+
+    FloatLayout:
+        Label:
+            markup: True
+            text: "[color=#000000][font=OpenSans]Stage-1 COPD[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (385,325)
+            font_size: '23px'
+        Label:
+            markup: True
+            text: "[color=#000000][font=OpenSans]% Improvement[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (200,225)
+            font_size: '18px'
+        Label:
+            id: p_improvement
+            markup: True
+            text: "[color=#000000][font=OpenSans]0000[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (350,225)
+            font_size: '18px'
+        Label:
+            markup: True
+            text: "[color=#000000][font=OpenSans]Date Of Next Test[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (200,190)
+            font_size: '18px'
+        Label:
+            id: p_date_of_next_test
+            markup: True
+            text: "[color=#000000][font=OpenSans]0000[/color][/font]"
+            size_hint: (None,None)
+            size: (50,50)
+            pos: (350,190)
+            font_size: '18px'
+        Button:
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]Treatment \n   Options[/b][/color]"
+		    size_hint: (None,None)
+		    height: 50
+            width: 120
+            pos: (220,130)
+            on_press: root.show_options()
+        Button:
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]   Generate \n Prescription[/b][/color]"
+		    size_hint: (None,None)
+		    height: 50
+            width: 120
+            pos: (370,130)
+        Button:
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]Generate \n  Report[/b][/color]"
+		    size_hint: (None,None)
+		    height: 50
+            width: 120
+            pos: (520,130)
+        Button:
+            background_color: [0,0,200,0.8]
+		    markup: True
+		    text: "[color=#ffffff][b]     Contact\nPulmonologist[/b][/color]"
+		    size_hint: (None,None)
+		    height: 50
+            width: 120
+            pos: (370,70)
+
